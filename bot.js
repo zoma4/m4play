@@ -3,7 +3,7 @@ const client = new Discord.Client();
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-   client.user.setActivity("2Play",{type: 'WATCHING'})
+   client.user.setActivity("M:broken_heart:A",{type: 'WATCHING'})
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -37,7 +37,7 @@ const queue = new Map();
  
  
  
-var prefix = "2" 
+var prefix = "M:broken_heart:AMA" 
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
    
@@ -229,7 +229,7 @@ function play(guild, song) {
     serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
  
-const adminprefix = "2";
+const adminprefix = "M:broken_heart:A";
 const devs = ['537109389518176257'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
