@@ -42,14 +42,6 @@ client.on('ready', () => {
 
 
 
-client.login(process.env.BOT_TOKEN);
-
-
-
-
-
-
-
 const prefix = "MA"
 client.on('message', async msg => { 
 	if (msg.author.bot) return undefined;
@@ -262,3 +254,8 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 }
  
 });
+
+
+
+
+client.login(process.env.BOT_TOKEN);
